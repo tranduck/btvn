@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style id="custom-cursor" type="text/css">body button, body [type='button'], body input[type='reset'], body input[type='submit'], body [role="button"], ::-webkit-search-cancel-button, ::-webkit-search-decoration, ::-webkit-scrollbar-button, ::-webkit-file-upload-button, [role^=button], .cc_pointer, [type="search"]::-webkit-search-cancel-button, a, select, [type="search"]::-webkit-search-decoration, .paper-button, .ytp-progress-bar-container, input[type=submit], :link, :visited, a > *, img,  ::-webkit-scrollbar-button, .ogdlpmhglpejoiomcodnpjnfgcpmgale_pointer, ::-webkit-file-upload-button, .ytp-volume-panel, #myogdlpmhglpejoiomcodnpjnfgcpmgale .icon, body .custom-cursor-on-hover {cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABKdJREFUWEftlntQ1FUUxz9319VFVERGQShFSHAUJwSWCamxSXwEqDgqguJ7MksUm9RewwyOrywbdVB0NEtcyMTp4RhCTWUOCSOJwiBgillmYw6a8Vjksb+9uYvusC64oO5/3f9+v3PvOZ/7vefecwRdGKdjZYRKsk22EiIlQmioEyr21yikRueJ5i646HSKcLT4bKx81qhQ5P48Lp7TQO0Chktw7RNQDBzS5Yo5jnw8zO4Q4JdYeaRvMDMD19u6MVyEihQQGoLCj4mKR4VwDBAjq59eir/nVPsQ5xJANjAvNFdkOQ2gOEZeGfoavoNi7EOUzgWlloVhuSLzfwDnKRB97whiOz6CljrWaYTxxBj3I7fxu3hepKWZugPjMAlvvR93pfeEFb7akJfs/JpzoPU2qEQLof1zQKO5hFQlcYdyXDW9MLTWiyPxymNdQ5nFFXSZvgTM7xDAayZ4TpWIuibIOgtn/mpGMfVAManRqOsR6KlwXSNKpjR2BOJQAUcA3okw6P7xmCSsyYURA2FSIPz5L0U/nZLTxpfk10Rsi3Y+gDlC+ikwbys50hKvqukGoys3ogj1VZA1SJmDbNpG2N5Ws92igMxkCGreAIKAqwgyxFxKLDYHR2CjgHnBzsK2jSaPtW54VMUGgrVeBLh4sbOmgJumlqOEbI+zAMgsRgIF9NMNwCcKbpXB38fNdAliPl92G2BXIUhpVcAcJLhyM4sG6EjxiqLqznWCq7bQIkQ0IdvzhNTzLV4xExl/FIS6jbpqN5QkG1GZlmNiLeGZ/p0loZ0CFgBbBSwAHjpSPKMs7idcTOd7w+VUQnZsMCvQyLhvXHjqgbf28mEoTASVVNBlqrsH0LkCZoDp1Xv4uv7CPQA9N4nQe+CfZJ+k5R9B2WrQfQqBC+2v4RzwntPuFlhy4FRbarXLgeDKTSzyCLcqYAuQTTragGSmlbYV+wfHd1Mg6E3wftHO9Ovb4DUL3ELbmb4ob/uYMdr6c95v+5nhHkKc+xjLv7jqPRy1KnAQV1QU47dyJBE77AGc8McGwHLVsglFoYjIzzX4zXZCSFuX64oOUnyjOvX49PUbrC+h1PMu6v4bmVIGfYY4F2LzCaiqSRX62e0A0lAxnB9xGzuOl0+CqofzIFYdo7G2cbnrgYQMm1ogD+GNkVICVg8k/EPnADQ0wytf8c8AY6RHxrxCu2Iks4nCRD6ROWqGzXryED//jnHf6foyba1H2N5XWzushncfp7XQewsTT8DA8CcLsfUkreevH+qZmWhp5zstx1LPx4V9g5a4TMhnTG+fJwJRY1C4mXKcoaq6aNd9SXkPB8hB7eGfnG1U9Zr9w/CVhLk+/s14rxg2V5ouyz/WB3CvdXt4QyIRlKYcHCy0SSUj32Gwxu2RlbjdAsM+g1rZ/DqLtbvvO3LYEVExqyfNPgWT+viF5w9f8cgA5t1vKjddo98Ff+JHtXQdwDzzTPKIu697ed4zy3pMdhvVbYirDRCYA00YFrGkz4H2DhwrcH92yarDk7XB8W+5L+g2wJZSyL+uFLNY/RxCmLsF6+g6QMEHS7m0bBdK324DIEzNaOpeYIH7uQcX/wfyA9UwW6uLegAAAABJRU5ErkJggg==") 12 0, pointer !important;} html,body,body select,body .custom-cursor-default-hover {cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABA1JREFUWEe91X9MlHUcB/D393me40DAUGJeLFhbM/ttK8xqq0EjCLdwtvMszho4GrPmsmalURsWA0OclahlBx2SZgoRNnEWetgPMg8pfw1R4Ew9QjzouMO7457n+X7rOZrkgOR+8f3z2ffzeb/2+X73fUjepvq6zx8/9CREdS7mlTdgihdpy2TSl2/v5dfHfCeBqpZh3oc1U2kgR59m4p1lED69+SDe+LOegUStxIPlH08V4hog9j7A0PcLCi7tBGXqd5GyoXgqENcBlMDagTbknDdCREQZHtrwVrgRYwBKYKP9FLQWA9yMbMO3cctRVETDBRkXoIQ1OzrxTNdWDEHeA3q3HikFYjgQEwKUsNarF5F1bhNsEPfBPleLtDxPqBH/C1DC2t29eOrsR7Aylwn2mdlIKxoKJeKGACWs29PvQ3TLg2ZERWfhrtL+UCEmBVDCrF4Hcn/bgo07b2nXDM1IT6ha2BMKxKQBShhziqAlTaBWR/eAelq6xpBtCRbhF0AJox4JrNQEZhmwunkhfbpReyYYhN8A3yREGXT9DyBnLtucKlVWXJW2NVBEQAAfQqaQK1rAH7M6+3k+O8G4uDkQRMAAH4IxyAYzuMNd7kEuQjuzRtvoLyIogA8BQK5pA3egw+viBX3sdl2tP4iAAUowowzMJQJDw6BfHYfQZvVw25+LCgtAarWC+8kC5vICdg+IwwO4RcArg1AKCDyTVEJTRLUuIywAOuAGebUBIs/vlwmaRPBX1Bxn83Do61FPt4kOyTa3JvOqP+HK3gmP4PQAsP8CsOqB0Zby5hZIZuuPkdW6J/wNmmj/uACTFVj0PUAAXFwKxAgj5fIFO7jVjehTxz6qMWYfCQViDGB3J/DiYWAYqPjnZ7ikYj4SXrl3JEq5eLTUBLnjSp26eok25IDy48CbZjDGYzWWkTIYWPHsWBR2LAaIMg5lCid7QdYdoj1RMXOSKhd2BovwTeCODyCsdQIb2zEMglzkk12+xpUsERTn92VAtSD5P1N4bweGI+o+iV5TvzxogDmLie8/D2GvFw4AzyKfHLyuaSX7IkMD/YEFo18lyy6Qn5e6u/jbk+fknLUFgyCpJeyd5llIh4QVKCAnxzSrcs2HpuHIqdRU3BOlGbkLVAb9ejbcnr/Wxr5gLwoKMKnittd+zZ+R8vBnt+Vc2y6d3gzy+0rb0YhFyY/p9rgn1WecTf9erRuUt67KiSTeHZfuX4d4YeSlpaILqE2Gk0kvx+kHt4YXYDIJuOmbP0pmZSWuScwEk72QunaDO1EIeC9XCPrhFeEFKN2PvV54qxBd/FL8IzhnqYXRUuN0Y5rRHplUlKRT3s3A1uSOQOndVBKP+N4WUE4NqLaYTpi3peU12wOLHa36G7/Y6zAaELBTAAAAAElFTkSuQmCC") 0 0, auto !important;}</style>
 </head>
 <body>
     <ul>
-      <li><a href="https://tranduck.github.io/btvn/TestLab1.html"></a></li>
-      <li><a href="https://tranduck.github.io/btvn/TestLab1.1.css"></a></li>
-      <li><a href="https://tranduck.github.io/btvn/TestLab1.2.html"></a></li>
-      <li><a href="https://tranduck.github.io/btvn/TestLab1.3.html"></a></li>
-      <li><a href="https://tranduck.github.io/btvn/bai2.1.html"></a></li>
-      <li><a href="https://tranduck.github.io/btvn/bai2.2.html"</a></li>
-      <li><a href="https://tranduck.github.io/btvn/bai2.3.html"</a></li>
-      <li><a href="https://tranduck.github.io/btvn/bai2.3.css"></a></li>
+      <li><a href="https://tranduck.github.io/btvn/TestLab1.html"></a>1</li>
+      <li><a href="https://tranduck.github.io/btvn/TestLab1.1.css"></a>2</li>
+      <li><a href="https://tranduck.github.io/btvn/TestLab1.2.html"></a>3</li>
+      <li><a href="https://tranduck.github.io/btvn/TestLab1.3.html"></a>4</li>
+      <li><a href="https://tranduck.github.io/btvn/bai2.1.html"></a>1</li>
+      <li><a href="https://tranduck.github.io/btvn/bai2.2.html"></a>2</li>
+      <li><a href="https://tranduck.github.io/btvn/bai2.3.html"></a>3</li>
+      <li><a href="https://tranduck.github.io/btvn/bai2.3.css"></a>4</li>
        
         <li>
-         <a href=" https://tranduck.github.io/btvn/2.1.html"></a>
+         <a href=" https://tranduck.github.io/btvn/2.1.html">1</a>
         </li>
-      <li><a href="https://tranduck.github.io/btvn/2.2.html"</a></li>
-        <li><a href="https://tranduck.github.io/btvn/2.3.html"></a></li>
-      <li><a href="https://tranduck.github.io/btvn/3.html"</a></li>
-      <li><a href="https://tranduck.github.io/btvn/3.css"></a></li>
+      <li><a href="https://tranduck.github.io/btvn/2.2.html"></a>2</li>
+        <li><a href="https://tranduck.github.io/btvn/2.3.html"></a>3</li>
+      <li><a href="https://tranduck.github.io/btvn/3.html"></a>3.1</li>
+      <li><a href="https://tranduck.github.io/btvn/3.css"></a>3.1</li>
     </ul>
 </body>
 </html>
