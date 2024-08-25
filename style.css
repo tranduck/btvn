@@ -1,0 +1,88 @@
+/* Import Segoe UI font */
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap');
+
+/* Global styles */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 100px;
+    padding: 150px;
+    background-color: #f4f4f4;
+    color: #1b1b1b;}
+
+pre,p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #1b1b1b;}
+
+
+header {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 20px 10%;
+    text-align: left;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Main content styles */
+main {
+    padding: 20px 10%;
+    background-color: #f9f9f9;
+}
+
+.update {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e1e1;
+}
+
+.update h2 {
+    color: #0078d4;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.update p {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.update ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.update ul li {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #0078d4;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.8em;
+}
+
+}
