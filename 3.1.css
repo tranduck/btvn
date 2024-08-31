@@ -1,0 +1,10 @@
+.image-caption {
+    font-style: italic;
+}
+img {
+    width: 700px;
+}
+body {
+    padding: 200px;
+    margin: 200px;
+}
