@@ -1,0 +1,85 @@
+/* styles.css */
+
+/* Định dạng toàn cục cho trang */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fcaef7;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Định dạng phần thông tin cá nhân */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.info {
+    max-width: 500px;
+}
+
+/* Định dạng phần sở thích */
+.hobbies, .links, .capability, .profession {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hobbies ul, .links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.hobbies li, .links li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.hobbies li:last-child, .links li:last-child {
+    border-bottom: none;
+}
+
+/* Định dạng phần chân trang */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,13 @@
+tr:hover {
+   color:#ddd;
+}
+thead {
+    color:#ffffff;
+    background-color:rgb(78, 186, 78);
+}
+#image{
+  opacity: 50%;
+}
+#image:hover {
+    opacity: 100%;
+}

@@ -1,0 +1,41 @@
+.content {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 80%;
+max-width: 600px;
+height: 900px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+box-sizing: border-box;
+background-color: #fff;
+}
+#red-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    color: white;
+    background-color: red;
+    text-align: center;
+}
+#blue-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    color: white;
+    background-color: blue;
+    text-align: center;
+}
+#green-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    color: white;
+    background-color: green;
+    text-align: center;}
