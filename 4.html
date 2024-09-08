@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="4.css">
+    <title>HTML TUTORIALS</title>
+</head>
+<body>
+   <div class="navbar">
+    <div class="weeks">
+        <button class="week-btn" onclick="toggleDropdown('tutorial')">menu</button>
+        <a href="https://www.w3schools.com/html/default.asp">HTML</a>
+       <a href="https://www.w3schools.com/css/default.asp">CSS</a>
+       <a href="https://www.w3schools.com/js/default.asp">JAVASCRIPT</a>
+       <a href="https://www.w3schools.com/sql/default.asp">SQL</a>
+        <a href="https://www.w3schools.com/python/default.asp">PYTHON</a>
+        <a href="https://www.w3schools.com/java/default.asp">JAVA</a>
+        <a href="https://www.w3schools.com/php/default.asp">PHP</a>
+        <a href="https://www.w3schools.com/howto/default.asp">HOW TO</a>
+        <a href="https://www.w3schools.com/w3css/default.asp">W3.CSS</a>
+   </div>
+</div>
+    <div class="dropdown" id="tutorial">
+        <a href="https://www.w3schools.com/html/default.asp">Home</a>
+        <a href="https://www.w3schools.com/html/html_intro.asp">introduction</a>
+        <a href="https://www.w3schools.com/html/html_editors.asp">editors</a>
+        <a href="https://www.w3schools.com/html/html_basic.asp">basic</a>
+    </div>
+    <div class="style">
+        <h1>HTML<span class="color_h1"> Tutorial</span></h1>
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="https://www.w3schools.com/default.asp">❮ Home</a>
+            <a class="w3-right w3-btn" href="https://www.w3schools.com/html/html_intro.asp">Next ❯</a>
+            </div>
+        <p>HTML is the standard markup language for Web pages.</p>
+
+         <p> With HTML you can create your own Website.</p>  
+            
+         <p>  HTML is easy to learn - You will enjoy it!.</p>
+    </div>
+
+    <script>
+        function toggleDropdown(id) {
+            var dropdown = document.getElementById(id);
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

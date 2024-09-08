@@ -1,0 +1,110 @@
+.dropdown {
+    display: none;
+    margin-left: 10px;
+    position: relative;
+    z-index: 1; 
+    left: 0; 
+}
+
+.dropdown a {
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    width: 200px;
+    background-color: #333;
+    color: rgb(244, 235, 235);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.week-btn {
+    background-color: #3a403a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.week-btn:hover {
+    background-color: #131513;
+}
+.navbar {
+    background-color: rgb(51, 51, 51);
+    overflow: hidden;
+    position: relative;
+    
+}
+div {
+    display: block;
+        unicode-bidi: isolate;}
+        body {
+            font-family: Arial, sans-serif;
+        }
+        /* Định dạng menu dọc */
+        .sidebar {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            padding-top: 20px;
+        }
+
+        /* Các mục trong menu */
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+
+        /* Hiệu ứng khi di chuột */
+        .sidebar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    a {
+        color:#ddd;
+        padding:10px;
+    }
+    style {
+    margin-top: 200px; 
+    padding: 20px;
+    }
+    element.style {
+    }
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+    user agent stylesheet
+    div {
+        display: block;
+        unicode-bidi: isolate;}
+        h1 {
+            font-size: 30px;
+        }
+    
+    h1 {
+        font-size: 42px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-weight: 400;
+            margin: 10px 0;}
+ .nextprev a.w3-right, .nextprev a.w3-left {
+    background-color: #04AA6D;
+    color: #ffffff;
+    border-color: #04AA6D;
+}
+h1, p {
+    padding: 20px;
+    margin: 10px;
+    text-align:justify;
+}
