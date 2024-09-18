@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week Navigation</title>
+    <link rel="stylesheet" href="baitap.css">
+  
+</head>
+<body>
+    <section class="profile">
+        <img src="https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-1/457237220_1231212618013803_6993807336139687885_n.jpg?stp=dst-jpg_s200x200&_nc_cat=111&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeHS2IgFDL46bdI4Qrt2keeN_CYAI5jOqH38JgAjmM6ofbrsTdinHN3QLXzi00Cj05t86bjK2B0WsptY-_v9xOZb&_nc_ohc=85D-Ixy7WnQQ7kNvgHQdGwF&_nc_ht=scontent.fhan5-10.fna&oh=00_AYD9-oQsaS6iTBLuF0eDKHDnXn54k16975EDI0jfjRAtXw&oe=66DB21EE" alt="My Photo" class="profile-photo">
+        <div class="info">
+            <h1 class="title">Phương Thùy 30Shiine</h1>
+        </div>
+    </section>
+    
+    <div class="weeks">
+        <button class="week-btn" onclick="toggleDropdown('week1')">buoi 1</button>
+        <button class="week-btn" onclick="toggleDropdown('week2')">buoi 2</button>
+        <button class="week-btn" onclick="toggleDropdown('week3')">buoi 3</button>
+        <button class="week-btn" onclick="toggleDropdown('week4')">buoi 4</button>
+    </div>
+
+    <div class="dropdown" id="week1">
+        <a href="https://tranduck.github.io/btvn/1.html">BTTL</a>
+        <a href="https://tranduck.github.io/btvn/1.1.html">B1</a>
+        <a href="https://tranduck.github.io/btvn/2.1.html">B2.1</a>
+        <a href="https://tranduck.github.io/btvn/index.html">B2.2</a>
+        <a href="https://tranduck.github.io/btvn/2.3.html">B2.3</a>
+    </div>
+
+    <div class="dropdown" id="week2">
+        <a href="Bai hat Trending (tranduck.github.io)">BTTL</a>
+        <a href="https://tranduck.github.io/btvn/bai2.2.html">B1</a>
+        <a href="https://tranduck.github.io/btvn/bai2.3.html">B2.1</a>
+        <a href="https://tranduck.github.io/btvn/TestLab1.1.css">B2.2</a>
+        <a href="https://tranduck.github.io/btvn/TestLab1.html">B2.3</a>
+        <a href="https://tranduck.github.io/btvn/TestLab1.2.html">BTTL</a>
+        <a href="https://tranduck.github.io/btvn/TestLab1.3.html">B1</a>
+        <a href="https://tranduck.github.io/btvn/2.2.html">B2.1</a>
+        <a href="https://tranduck.github.io/btvn/2.3.html">B2.2</a>
+        <a href="https://tranduck.github.io/btvn/style.css">B2.3</a>
+        <a href="https://github.com/tranduck/btvn/blob/main/3.css">BTTL</a>
+        <a href="https://tranduck.github.io/btvn/3.html">B2.1</a>
+    </div>
+
+    <div class="dropdown" id="week3">
+        <a href="https://tranduck.github.io/btvn/1.html">BTTL22</a>
+        <a href="https://tranduck.github.io/btvn/1.1.html">B1</a>
+        <a href="https://tranduck.github.io/btvn/2.1.html">B2.1</a>
+        <a href="https://tranduck.github.io/btvn/index.html">B2.2</a>
+        <a href="https://tranduck.github.io/btvn/2.3.html">B2.3</a>
+    </div>
+
+    <div class="dropdown" id="week4">
+        <a href="https://tranduck.github.io/btvn/1.html">BTTL11</a>
+        <a href="https://tranduck.github.io/btvn/1.1.html">B1</a>
+        <a href="https://tranduck.github.io/btvn/2.1.html">B2.1</a>
+        <a href="https://tranduck.github.io/btvn/index.html">B2.2</a>
+        <a href="https://tranduck.github.io/btvn/2.3.html">B2.3</a>
+    </div>
+
+    <script>
+    function toggleDropdown(id) {
+            var dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(function(dropdown) {
+                dropdown.style.display = 'none';
+            });}
+        function toggleDropdown(id) {
+            var dropdown = document.getElementById(id);
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
