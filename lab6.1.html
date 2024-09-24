@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Album Hot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .album-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #2c2c2c;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+        }
+
+        .album-title-header {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            padding: 20px;
+            text-align: left;
+            color: #fff;
+        }
+
+        .album-items {
+    display: flex;
+    gap: 20px; 
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+}
+
+.album-item {
+    position: relative; 
+    text-align: left;
+    flex-wrap: nowrap; 
+    width: 150px; }
+
+        .album-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .album-title {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #fff;
+            font-weight: bold;
+            position: relative; 
+            text-align: left;
+            width: 150px; 
+}
+        
+
+        .artist-name {
+            font-size: 12px;
+            color: #ccc;
+        }
+        .album-item:hover img {
+            filter: brightness(50%); 
+        }
+
+.icon-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    gap: 20px;
+    transition: opacity 0.3s ease; 
+    color: #fff;
+}
+
+.icon-container i {
+    font-size: 20px;
+    color: #f1ecec; 
+    opacity: 0.9;
+}
+
+.album-item:hover .icon-container {
+    opacity: 1;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="album-title-header">Album Hot</div>
+    <div class="album-container">
+        
+        <div class="album-item">
+            <img src="https://th.bing.com/th/id/OIP.3XdhL_22OJHtjfPSePxixwAAAA?w=147&h=169&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Baby Honey">
+            <div class="icon-container">
+                <i class="fa fa-play-circle"></i>
+                <i class="fa fa-heart"></i> 
+            </div>
+            <div class="album-title">Baby Honey (Single)</div>
+            <div class="artist-name">DUYDATDO, Đức Anh, Kiyoesh Phan</div>
+        </div>
+            <div class="album-item">
+                <img src="https://th.bing.com/th/id/OIP.dBd7t2lfSAX7ScRUudSeggAAAA?w=146&h=169&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Cứu Non">
+                <div class="icon-container">
+                    <i class="fa fa-play-circle"></i>
+                    <i class="fa fa-heart"></i> 
+                </div>
+                <div class="album-title">Cứu Non (Single)</div>
+                <div class="artist-name">Châu Dương, Đinh Quang Đạt</div>
+            </div>
+            <div class="album-item">
+                <img src="https://th.bing.com/th/id/OIP.BP5bgaZoV01ssCNxjqa-jwAAAA?w=152&h=169&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Người Ở Đừng Về">
+                <div class="icon-container">
+                    <i class="fa fa-play-circle"></i>
+                    <i class="fa fa-heart"></i> 
+                </div>
+                <div class="album-title">Người Ở Đừng Bỏ Quê</div>
+                <div class="artist-name">Hồ Văn Cường</div>
+            </div>
+            <div class="album-item">
+                <img src="https://th.bing.com/th/id/OIP.7Qq-lxG6b9ncy5m148jjagHaHa?w=183&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Nghe Nói Anh Yêu Em">
+                <div class="icon-container">
+                    <i class="fa fa-play-circle"></i>
+                    <i class="fa fa-heart"></i> 
+                </div>
+                <div class="album-title">Nghe Nói Anh Yêu Em</div>
+                <div class="artist-name">Châu Khải Phong, Ngân Ngân</div>
+            </div>
+            <div class="album-item">
+                <img src="https://th.bing.com/th/id/OIP.4hupUiXwmh2_geCeuk6fqAAAAA?w=147&h=169&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Tự Ta Đa Tình">
+                <div class="icon-container">
+                    <i class="fa fa-play-circle"></i>
+                    <i class="fa fa-heart"></i> 
+                </div>
+                <div class="album-title">Tự Ta Đa Tình Tự Ta Đau</div>
+                <div class="artist-name">Bạch Công Khanh</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+}
+a {
+    color:#353333;
+
+}
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #333;
+}
+
+.highlight {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+}
+
+.menu-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+.category-menu {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.category-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.category-menu ul li {
+    margin: 0 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.category-menu ul li.active {
+    text-decoration: underline;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.portfolio .item {
+    margin: 0 10px;
+}
+
+.portfolio .item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.promo {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #232425;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.promo a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-content {
+    position: relative;
+    text-align: center;
+}
+
+.overlay-content img {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    bottom: 250px;
+    left: 600px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.portfolio .item {
+    position: relative;
+    margin: 0 10px;
+}
+
+.portfolio .item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.overlay-container {
+    position: relative;
+}
+
+.image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.heart {
+    font-size: 2.5rem;
+    color: rgb(242, 238, 238);
+    opacity: 0.8;
+}
+
+.overlay-container:hover .image-overlay {
+    opacity: 1;
+    box-sizing:content-box;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
