@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="7.1.css">
+    <title>Website Cá Nhân</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <button onclick="showSection('home')">About Me</button>
+        <button onclick="showSection('about')">My hobbies</button>
+        <button onclick="showSection('services')">My capability</button>
+        <button onclick="showSection('projects')">Career orientation</button>
+        <button onclick="showSection('blog')">Course Links</button>
+        <button onclick="showSection('contact')">Contact</button>
+    </div>
+
+    <div class="container" id="home">
+        <h1>Chào Mừng Đến Với Website Cá Nhân Của Phương Thùy</h1>
+     <img src="https://th.bing.com/th/id/OIP.e18TQXBFycR3qv448XHfIQHaEK?w=301&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Giới Thiệu">
+            <h2>About Me</h2>
+            <p>Name: Trần Thị Phương Thùy</p>
+            <p>Age: 19</p>
+            <p>Location: Đông Anh, Hà Nội</p>
+            <p>Profession: Sinh viên</p>
+    </div>
+
+    <div class="container" id="about">
+        <section class="hobbies">
+            <h2>My hobbies</h2>
+            <ul>
+                <li>Reading</li>
+                <li>Coding</li>
+                <li>Traveling</li>
+                <li>Photography</li>
+            </ul>
+        </section>
+        
+    </div>
+    
+
+    <div class="container" id="services">
+        <h2>My capability</h2>
+        <ul>
+            <li>Thích ứng nhanh với môi trường ổn định</li>
+            <li>Có thể sử dụng linh hoạt kĩ năng mềm và cứng</li>
+            <li>Có sự hiểu biết nhất định với ngôn ngữ lập trình HTML</li>
+        </ul>
+    </div>
+
+    <div class="container" id="projects">
+        <h2>Career orientation</h2>
+        <ul>
+            <li>Lắp mạng wifi</li>
+            <li>Coder lương 100 triệu</li>
+            <li>Freelancer</li>
+            <li>Tester</li>
+            <li>Ship hàng cho các ứng dụng giao hàng</li>
+        </ul>
+    </div>
+
+    <div class="container" id="blog">
+        <section class="links">
+            <h2>Coursework Links</h2>
+             <a href="baitap5.html">Baitap</a>
+        </section>
+    </div>
+
+    <div class="container" id="contact">
+        <p>Connect with me: 
+            <a href="https://www.facebook.com/iutpt" target="_blank">Facebook</a> 
+            <a href="https://github.com/tranduck/" target="_blank">GitHub</a>
+        </p>
+    </div>
+    <script>
+        function showSection(id) {
+            
+            var containers = document.querySelectorAll('.container');
+            
+            
+            var currentlyActive = document.querySelector('.container.active');
+            
+            
+            if (currentlyActive && currentlyActive.id === id) {
+                
+                currentlyActive.classList.remove('active');
+            } else {
+                
+                containers.forEach(function(container) {
+                    container.classList.remove('active');
+                });
+                
+                var section = document.getElementById(id);
+                if (section) {
+                    section.classList.add('active');
+                }
+            }
+        }
+    </script>
+    <div class="theme-toggle">
+        <button onclick="switchTheme()">Switch Theme</button>
+    </div>
+    
+    <script>
+        function switchTheme() {
+            document.body.classList.toggle('dark-theme');
+        }
+    </script>
+    
+
+</body>
+</html>
