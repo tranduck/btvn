@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đổi màu bằng JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .text {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="text" id="text">Đổi màu tôi đi</div>
+    <button id="changeColorBtn">Xanh</button>
+
+    <script>
+        const colors = ["red", "green", "blue", "orange", "purple", "pink"];
+        let currentIndex = 0;
+        document.getElementById("changeColorBtn").addEventListener("click", function() {
+            document.getElementById("text").style.color = colors[currentIndex];
+            currentIndex = (currentIndex + 1) % colors.length;
+        });
+    </script>
+
+</body>
+</html>

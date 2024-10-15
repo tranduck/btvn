@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hiện phép toán</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2, h3 {
+            font-weight: bold;
+        }
+        .operation {
+            margin: 10px 0;
+        }
+        .operation label {
+            width: 100px;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .operation input {
+            width: 50px;
+            text-align: center;
+        }
+        .operation span {
+            display: inline-block;
+            min-width: 50px;
+            text-align: center;
+        }
+        .operation button {
+            margin-left: 10px;
+        }
+        .history {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h3>Các phép toán</h3>
+    <div class="operation">
+        <label>Phép cộng</label>
+        <input type="number" id="add1" value="3"> + 
+        <input type="number" id="add2" value="3"> = 
+        <span id="addResult"></span>
+        <button onclick="calculate('add')">Tính</button>
+    </div>
+    <div class="operation">
+        <label>Phép trừ</label>
+        <input type="number" id="sub1" value="3"> - 
+        <input type="number" id="sub2" value="3"> = 
+        <span id="subResult"></span>
+        <button onclick="calculate('sub')">Tính</button>
+    </div>
+    <div class="operation">
+        <label>Phép nhân</label>
+        <input type="number" id="mul1" value="2"> * 
+        <input type="number" id="mul2" value="2"> = 
+        <span id="mulResult"></span>
+        <button onclick="calculate('mul')">Tính</button>
+    </div>
+    <div class="operation">
+        <label>Phép chia</label>
+        <input type="number" id="div1" value="3"> / 
+        <input type="number" id="div2" value="3"> = 
+        <span id="divResult"></span>
+        <button onclick="calculate('div')">Tính</button>
+    </div>
+
+    <h3>Các phép toán vừa thực hiện</h3>
+    <div id="history" class="history"></div>
+
+    <script>
+        function calculate(operation) {
+            let result = 0;
+            let expression = '';
+
+            switch(operation) {
+                case 'add':
+                    const add1 = parseFloat(document.getElementById('add1').value);
+                    const add2 = parseFloat(document.getElementById('add2').value);
+                    result = add1 + add2;
+                    document.getElementById('addResult').innerText = result;
+                    expression = `PHÉP CỘNG 
+                    ${add1} + ${add2} = ${result}`;
+                    break;
+                case 'sub':
+                    const sub1 = parseFloat(document.getElementById('sub1').value);
+                    const sub2 = parseFloat(document.getElementById('sub2').value);
+                    result = sub1 - sub2;
+                    document.getElementById('subResult').innerText = result;
+                    expression = `PHÉP TRỪ 
+                    ${sub1} - ${sub2} = ${result}`;
+                    break;
+                case 'mul':
+                    const mul1 = parseFloat(document.getElementById('mul1').value);
+                    const mul2 = parseFloat(document.getElementById('mul2').value);
+                    result = mul1 * mul2;
+                    document.getElementById('mulResult').innerText = result;
+                    expression = `PHÉP NHÂN 
+                    ${mul1} * ${mul2} = ${result}`;
+                    break;
+                    case 'div':
+                    const div1 = parseFloat(document.getElementById('div1').value);
+                    const div2 = parseFloat(document.getElementById('div2').value);
+                    result = div2 !== 0 ? div1 / div2 : 'Không thể chia cho 0';
+                    document.getElementById('divResult').innerText = result;
+                    expression = `PHÉP CHIA 
+                    ${div1} / ${div2} = ${result}`;
+                    break;
+            }
+
+            const historyDiv = document.getElementById('history');
+            const newEntry = document.createElement('div');
+            newEntry.classList.add('highlight');
+            newEntry.innerText = expression;
+            Array.from(historyDiv.children).forEach(child => child.classList.remove('highlight'));
+            historyDiv.appendChild(newEntry);
+        }
+    </script>
+</body>
+</html>
