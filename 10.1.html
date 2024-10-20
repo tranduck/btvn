@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Navigation</title>
+  <link rel="stylesheet" href="10.1.css">
+</head>
+<body>
+
+<h1>Learn how to create an animated, closable side navigation menu.</h1>
+
+<button class="open-btn" onclick="openNav('overlay')">Sidenav overlay</button>
+<button class="open-btn" onclick="openNav('overlayNoAnimation')">Sidenav overlay without animation</button>
+<button class="open-btn" onclick="openNav('push')">Sidenav push (off-canvas)</button>
+<button class="open-btn" onclick="openNav('pushOpacity')">Sidenav push w/opacity</button>
+<button class="open-btn" onclick="openNav('fullWidth')">Sidenav full-width</button>
+
+<div id="overlay" class="sidenav-overlay">
+  <a href="javascript:void(0)" class="close-btn" onclick="closeNav('overlay')">&times;</a>
+  <p>Overlay Sidebar</p>
+</div>
+
+<div id="overlayNoAnimation" class="sidenav-overlay no-animation">
+  <a href="javascript:void(0)" class="close-btn" onclick="closeNav('overlayNoAnimation')">&times;</a>
+  <p>Overlay Sidebar without animation</p>
+</div>
+
+<div id="push" class="sidenav-push">
+  <a href="javascript:void(0)" class="close-btn" onclick="closeNav('push')">&times;</a>
+  <p>Push Sidebar</p>
+</div>
+
+<div id="pushOpacity" class="sidenav-push-opacity">
+  <a href="javascript:void(0)" class="close-btn" onclick="closeNav('pushOpacity')">&times;</a>
+  <p>Push Sidebar with opacity</p>
+</div>
+
+<div id="fullWidth" class="sidenav-full">
+  <a href="javascript:void(0)" class="close-btn" onclick="closeNav('fullWidth')">&times;</a>
+  <p>Full-width Sidebar</p>
+</div>
+
+<script src="10.1.js"></script>
+</body>
+</html>
