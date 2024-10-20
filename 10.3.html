@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="10.3.css">
+    <title>Website Cá Nhân</title>
+</head>
+<body>
+
+    <div class="toggle-btn" id="menu-btn" onclick="toggleSidebar()">☰ Menu</div>
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">×</a>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('about')">About Me</a>
+        <a href="#" onclick="showSection('hobbies')">My Hobbies</a>
+        <a href="#" onclick="showSection('services')">My Capability</a>
+        <a href="#" onclick="showSection('projects')">Career Orientation</a>
+        <a href="#" onclick="showSection('homework')">Homework</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+    </div>
+
+    <div class="content">
+        <section id="home" class="section active">
+            <h1>Chào Mừng Đến Với Website Cá Nhân</h1>
+            <img src="https://i.pinimg.com/736x/ae/b1/26/aeb126a1647e9750afef54df55c4f009.jpg" alt="Trang Chủ" class="main-image">
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Name: Trần Thị Phương Thùy</p>
+            <p>Age: 19</p>
+            <p>Location: Đông Anh, Hà Nội</p>
+            <p>Profession: Sinh viên</p>
+        </section>
+
+        <section id="hobbies" class="section">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Reading</li>
+                <li>Coding</li>
+                <li>Traveling</li>
+                <li>Photography</li>
+            </ul>
+        </section>
+
+        <section id="services" class="section">
+            <h2>My Capability</h2>
+            <ul>
+                <li>Thích ứng nhanh với môi trường ổn định</li>
+                <li>Có thể sử dụng linh hoạt kĩ năng mềm và cứng</li>
+                <li>Có sự hiểu biết nhất định với ngôn ngữ lập trình HTML</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Career Orientation</h2>
+            <ul>
+                <li>Lắp mạng wifi</li>
+                <li>Coder lương 100 triệu</li>
+                <li>Freelancer</li>
+                <li>Tester</li>
+                <li>Ship hàng cho các ứng dụng giao hàng</li>
+            </ul>
+        </section>
+        <section id="homework" class="section">
+            <h2>Homework</h2>
+            <a href="baitap5.html">BaiTap</a>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Connect with me: 
+                <a href="https://www.facebook.com/iutpt" target="_blank">Facebook</a> 
+                <a href="https://github.com/tranduck/" target="_blank">GitHub</a>
+            </p>
+        </section>
+    </div>
+
+    <script src="10.3.js"></script>
+</body>
+</html>
